@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.noot.com.br/foundation/6.x/css/foundation-just-grid.min.css" rel="stylesheet" />
+    <link href="https://cdn.noot.com.br/fontawesome/6.x/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="https://cdn.noot.com.br/aos/2.x/css/aos.min.css" rel="stylesheet" />
+    <link href="https://cdn.coelhodev.com.br/slick/1.x/css/slick.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v1.0.1">
+    <title>Well Go</title>
+</head>
+
+<body>
+    <header >
+        <div class="grid-x align-middle">
+            <div class="cell small-6 medium-3 text-center align-center align-middle">
+                <img class="logo" src="/img/wellgologo.svg" alt="wellgologo">
+            </div>
+
+            <div class="cell small-5 medium-auto large-auto">
+                <div class="grid-x grid-container align-middle">
+                    <div class="cell menu_first">
+                        <nav>
+                            <ul>
+                                <li><a href ="#business">Para seu negócio</a></li>
+                                <li><a href ="#">Aplicativo</a></li>
+                                <li><a href ="#plan">Planos</a></li>
+                                <li><a href ="#faq">Perguntas frequentes</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cell small-5 medium-shrink large-shrink text-right menu_first">
+                <ul class="menu">
+                    <li><a target="_blank" href="login.html">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                    <li><a href="#">Cadastrar-se agora mesmo</a></li>
+                </ul>
+
+                <button onClick="menu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="modal-container" data-modal="container">
+            <div class="modal vector_modal" id="modal">
+                <button onClick="menu()" class="close">
+                    <i class="fa-regular fa-xmark"></i>
+                </button>
+                <div class="logo">
+                    <img src="img/wellgologo.svg" alt="wellgologo" />
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#business" onClick="menu()">Para seu negócio</a></li>
+                        <li><a href="#" onClick="menu()">Aplicativo</a></li>
+                        <li><a href="#plan" onClick="menu()">Planos</a></li>
+                        <li><a href="#faq" onClick="menu()">Perguntas frequentes</a></li>
+                    </ul>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="automatic">
+        <div class="grid-x grid-container grid-padding-x align-center text-center">
+            <div class="cell small-16 medium-16">
+                <p><a href="#">Aumente em até 70% em seus agendamentos automáticos <i class="fa-light fa-arrow-right-long"></i></a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="vector_background">
+        <div class="vector_2">
+            <div class="arrow_yellow">
+                <div class="arrow_blue">
+                    <!-- <div class="arrow_normal"> -->
+                        <section class="bestapp">
+                            <div class="grid-x grid-container grid-padding-x align-center text-center">
+                                <div class="cell small-16 medium-16 align-center">
+                                    <h1>O melhor aplicativo de agendamento e gestão para seu <b class="app">negócio</b></h1>
+                                </div>
+
+                                <div class="cell small-16 medium-16 align-center align-middle">
+                                    <form action="/" method="post">
+                                        <input type="text" placeholder="Seu melhor e-mail">
+                                        <button>Teste o plano gratuito</button>
+                                    </form>
+                                </div>
+
+                                <div class="cell small-16 medium-16 month">
+                                    <span><i class="fa-sharp fa-solid fa-circle-check"></i> É <b class="free">100% gratuito</b> e nunca enviaremos mais de um e-mail por mês.</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="whatsapp">
+                            <div class="grid-x grid-container grid-padding-x align-center align-middle">
+                                <div class="cell small-16 medium-8 medium-offset-8">
+                                    <span>Notificações</span>
+
+                                    <h2>Avisos e mensagens automáticas<br/> por Whatsapp</h2>
+                                    <ul>
+                                        <li><img src="/vectors/vector_blue.png">Confirmação de agendamento</li>
+                                        <li><img src="/vectors/vector_blue.png">Aviso de retorno</li>
+                                        <li><img src="/vectors/vector_blue.png">Alertas</li>
+                                    </ul>
+
+                                    <a href="#">Saiba mais <i class="fa-light fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                                <div class="man-cell"></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="management" id="business">
+        <div class="grey_icon">
+            <img src="/vectors/vectors_management.png" alt="" style="width: 32px;">
+        </div>
+
+        <div class="grey_icon_1">
+            <img src="/vectors/vector_management_1.png" alt="" style="width: 32px;">
+        </div>
+
+        <div class="grid-x grid-container grid-padding-x align-center align-middle">
+            <div class="cell small-16 medium-16 text-center">
+                <span>Chega de dor de cabeça</span>
+                <h1>Está tendo problema com a <b class="free">gestão</b> de seus clientes?</h1>
+
+                <p class="separate">Momentos em que a fila de espera em seu salão e em outros horários ele fica as moscas? Não faz ideia dos seus custos e ganhos e de quanto precisa faturar para 
+                    ter um bom ganho no final do mês?
+                </p>
+            </div>
+
+            <div class="cell small-16 medium-8 spacing">
+                <h3>Agendamento online</h3>
+                <p class="organize">Agendamentos e fila de espera, controle com facilidade atendimentos com hora marcada, 
+                    repetição de serviços por período, fila de espera e bloqueio de horários. 
+                </p>
+
+                <a href="#">Saiba mais <i class="fa-light fa-arrow-right-long"></i></a>
+            </div>
+
+            <div class="cell small-16 medium-8 spacing">
+                <img src="/img/online.png" alt="absctract">
+            </div>
+        </div>   
+    </section>
+
+    <section class="management">
+        <div class="ball">
+            <img src="/vectors/yellow_ball.png" alt="yellowball" style="width:16px;">
+        </div>
+
+        <div class="giant_ball">
+            <img src="/vectors/giant_ball.png" alt="giantball" style="width:48px">
+        </div>
+
+        <div class="tiny_ball">
+            <img src="/vectors/tiny_ball.png" alt="tinyball" style="width:16px">
+        </div>
+
+        <div class="grid-x grid-container grid-padding-x align-center align-middle reverse">
+            <div class="cell small-16 medium-8 spacing">
+                <img src="/img/payment.png" alt="absctract">
+            </div>
+
+            <div class="cell small-16 medium-8 spacing reverse mobile">
+                 <h3>Pagamento ou reserva no cartão online</h3>
+                 <p class="organize">Tenha a opção de reservar valores no cartão<br/> do cliente para garantir seu<br/> comparecimento.</p>
+
+                <a href="#" class="yellowbtn">Cadastra-se agora mesmo</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="management">
+        <div class="small_ball">
+            <img src="/vectors/yellow_ball.png" alt="ball" style="width: 16px;">
+        </div>
+
+        <div class="grid-x grid-container grid-padding-x align-center align-middle">
+            <div class="cell small-16 medium-8 spacing mobile">
+                <h3>Seu próprio aplicativo</h3>
+                <p class="organize">Disponibilize a seus clientes seu próprio aplicativo,<br/> com seu logotipo e cores, nas versões Android e IOS.</p>
+                <a href="#">Eu quero <i class="fa-light fa-arrow-right-long"></i></i></a>
+            </div>
+
+            <div class="cell small-16 medium-8 spacing">
+                <img src="/img/phone.png" alt="absctract">
+            </div>
+        </div>
+    </section>
+
+    <section class="management">
+        <div class="giant_ball_blue">
+            <img src="/vectors/giant_ball_blue.png" alt="giantballblue" style="width: 48px;">
+        </div>
+
+        <div class="tiny_ball_blue">
+            <img src="/vectors/tiny_ball.png" alt="tinyball" style="width: 16px;">
+        </div>
+        <div class="grid-x grid-container grid-padding-x align-center align-middle reverse">
+            <div class="cell small-16 medium-8 spacing">
+                <img src="/img/financial.png" alt="absctract">
+            </div>
+
+            <div class="cell small-16 medium-8 spacing mobile">
+                <h3>Controle Financeiro</h3>
+                <p class="organize">Tenha em mãos relatórios financeiros com controles de entrada e saída. Visualize com clareza seus ganhos e gastos.</p>
+                <a href="#" class="yellowbtn">Teste o plano gratuito</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="tiny_piece">
+            <img src="/vectors/tiny_piece.png" alt="pieceyellow" style="width: 32px;">
+        </div>
+
+        <div class="tiny_pieces_benefits">
+            <img src="/vectors/tiny_pieces_benefits.png" alt="piecesbenefits">
+        </div>
+
+        <div class="grid-x grid-container grid-padding-x">
+            <div class="cell small-16 medium-8">
+                <span>Benefícios</span>
+                <h3>Aumente em até<br/> 30% sua taxa de retorno.</h3>
+                <a href="#">Cadastre-se <i class="fa-light fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+        <div class="smiling-woman"></div>
+    </section>
+
+    <section class="management">
+        <div class="employee">
+            <img src="/vectors/giant_ball_blue.png" alt="ballblue" style="width:48px">
+        </div>
+
+        <div class="employee_y">
+            <img src="/vectors/giant_ball.png" alt="ballyellow" style="width:48px">
+        </div>
+
+        <div class="grid-x grid-container grid-padding-x align-center align-middle reverse">
+            <div class="cell small-16 medium-8 spacing">
+                <img src="/img/payment.png" alt="absctract">
+            </div>
+
+            <div class="cell small-16 medium-8 spacing mobile">
+                <h3>Comissionamento<br/> automático de <br/>funcionários</h3>
+                <p class="organize" >Elabore suas regras de comissionamentos por serviços, produtos, colaboradores ou assistentes. Defina os valores e formas de recebimento de acordo com seu modelo de trabalho.
+                </p>
+                <a href="#">Saiba mais <i class="fa-light fa-arrow-right-long"></i></a>
+            </div>
+    </section>
+    
+    
+    <section class="management">
+        <div class="stock">
+            <img src="/vectors/tiny_ball.png" alt="ballblue" style="width:16px;">
+        </div>
+
+        <div class="stock_new">
+            <img src="/vectors/vector_stock.png" alt="vector" style="width: 22px;">
+        </div>
+        <div class="grid-x grid-container grid-padding-x align-center align-middle">
+            <div class="cell small-16 medium-8 spacing mobile">
+                <h3>Gestão de estoque</h3>
+                <p class="organize">Cadastre produtos e de baixa automática de estoque com base na venda ou uso de produtos. É possível configurar a quantidade de produtos utilizados em cada serviço e o sistema realizará a baixa no estoque automaticamente.
+                </p>
+                <a href="#" class="yellowbtn">Cadastre-se agora mesmo</a>
+            </div>
+
+            <div class="cell small-16 medium-8 spacing">
+                <img src="/img/online.png" alt="absctract">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="management">
+        <div class="searching">
+            <img src="/vectors/yellow_ball.png" alt="yellowball" style="width:16px;">
+        </div>
+
+        <div class="search">
+            <img src="/vectors/Vector_search.png" alt="vector" style="width:22px;">
+        </div>
+
+        <div class="search_blue">
+            <img src="/vectors/tiny_ball.png" alt="vector" style="width:16px;">
+        </div>
+
+        <div class="search_for">
+            <img src="/vectors/vector_searchingfor.png" alt="vector" style="width: 52px;">
+        </div>
+
+        <div class="grid-x grid-container grid-padding-x align-center align-middle reverse">
+            <div class="cell small-16 medium-8 spacing">
+                <img src="/img/financial.png" alt="absctract">
+            </div>
+
+            <div class="cell small-16 medium-8 spacing mobile">
+                <h3>Pesquisa de satisfação</h3>
+                <p class="organize">Após o cliente utilizar seus serviços, o sistema automaticamente envia uma pesquisa para ele. Onde ele poderá dar nota aos serviços prestados e um feedback que servirá para a implementação de melhorias.</p>
+                <a href="#">Eu quero <i class="fa-light fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="oportunity">
+        <div class="bck_oportunity"></div>
+
+        <div class="yellow_pizz">
+            <img src="/vectors/pizz.png" alt="yellowarrow" style="width: 44px;">
+        </div>
+
+        
+        <div class="yellow_pizz_1">
+            <img src="/vectors/pizz.png" alt="yellowarrow" style="width: 44px;">
+        </div>
+
+
+        <div class="this_blue">
+            <img src="/vectors/tiny_ball.png" alt="ballblue" style="width:14px">
+        </div>
+
+
+        <div class="grid-x grid-container grid-padding-x">
+            <div class="cell small-16 medium-8 medium-offset-8">
+                <span>Vai perder uma oportunidade dessas?</span>
+                <h3>Aumente em até 70% seus agendamentos automáticos</h3>
+                <a href="#">Cadastre-se <i class="fa-light fa-arrow-right-long"></i></a>
+            </div>
+
+            <div class="smiling-man"></div>
+        </div>
+    </section>
+
+    <section class="management">
+        <div class="fidelity">
+            <img src="/vectors/fidelity.png" alt="vectors" style="width: 26px;">
+        </div>
+
+        <div class="program"> 
+            <img src="/vectors/program.png" alt="vectors" style="width: 26px;">
+        </div>
+
+        <div class="grid-x grid-container grid-padding-x align-center align-middle reverse">
+            <div class="cell small-16 medium-8 spacing">
+                <img src="/img/financial.png" alt="absctract">
+            </div>
+
+            <div class="cell small-16 medium-8 spacing">
+                <h3>Pacotes e Programas de fidelidade</h3>
+                <p class="organize">Crie programas de fidelidade, pacotes e combos de serviços, gerencie valores e validades. Aplicando promoções e descontos em serviços que foram adquiridos por fidelidade ou em conjunto.</p>
+                <a href="#" class="yellowbtn">Cadastre-se agora mesmo</a>
+            </div>
+    </section>
+
+    <section class="management">
+        <div class="share">
+            <img src="/vectors/giant_ball_blue.png" alt="ballblue" style="width: 48px;">
+        </div>
+
+        <div class="permissions">
+            <img src="/vectors/giant_ball.png" alt="ballyellow" style="width: 36px;">
+        </div>
+
+        <div class="user">
+            <img src="/vectors/vectors_management.png" alt="vector" style="width: 32px;">
+        </div>
+
+        <div class="grid-x grid-container grid-padding-x align-center align-middle">
+            <div class="cell small-16 medium-8 spacing">
+                <h3>Compartilhe o sistema com seus funcionários e defina permissões de acesso</h3>
+                <p class="organize">Libere usuários e forneça facilmente permissões para que seus colaboradores consigam ou não acessar agendas, relatórios, dados de clientes e etc.</p>
+                <a href="#">Eu quero <i class="fa-light fa-arrow-right-long"></i></a>
+            </div>
+
+            <div class="cell small-16 medium-8 spacing">
+                <img src="/img/payment.png" alt="absctract">
+            </div>
+        </div>
+    </section>
+
+    <section class="premium">
+        <div class="socials">
+            <img src="/vectors/socials.png" alt="vector" style="width:32px">
+        </div>
+
+        <div class="vector_blue"></div>
+
+        <div class="vector_yellow"></div>
+
+        <div class="vector_socials">
+            <img src="/vectors/vector_socials.png" alt="vector" style="width:12px">
+        </div>
+
+        <div class="ball_socials">
+            <img src="/vectors/tiny_ball.png" alt="blueball" style="width: 12px;">
+        </div>
+
+        <div class="grid-x grid-container grid-padding-x align-center align-middle reverse">
+            <div class="cell small-16 medium-8 spacing laptop">
+                <img class="man-working" src="/img/laptop-man.png" alt="working man">
+            </div>
+
+            <div class="cell small-16 medium-8 spacing arrow_posts">
+                <span><i class="fa-sharp fa-solid fa-crown"></i> Premium</span>
+                <h1>Posts para<br/> sua rede <b class="free">social</b></h1>
+                <p class="organize">Tenha em mãos posts personalizados e sugestões de conteúdo para sua rede social. Altere cores, textos e fotos como bem entender.
+                </p>
+                <a href="#" class="yellowbtn">Teste o plano gratuito</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="options">
+        <div class="options_vector">
+            <img src="/vectors/giant_ball.png" alt="ball" style="width: 36px;">
+        </div>
+
+        <div class="vector_options">
+            <img src="/vectors/yellow_ball.png" alt="ballyellow" style="width: 12px;">
+        </div>
+
+        <div class="grid-x grid-container grid-padding-x align-middle align-center">
+            <div class="small-16 medium-5">
+                <i class="fa-regular fa-circle-dollar icons"></i>
+                <h3>Abertura<br/> de comandas</h3>
+                <p class="options-inside-1">Controle o consumo de produtos e serviços de seus clientes através de comandas.</p>
+                <a href="#">Saiba mais <i class="fa-light fa-arrow-right-long"></i></a>
+            </div>
+
+            <div class="small-16 medium-6 options-spacing">
+                <i class="fa-regular fa-heart-pulse icons"></i>
+                <h3>Gerenciamento<br/> de planos de saúde</h3>
+                <p class="options-inside-2">Selecione os planos de saúde atendidos e limite o horário/número de atendimentos para cada plano.</p>
+                <a href="#">Saiba mais <i class="fa-light fa-arrow-right-long"></i></a>
+            </div>
+
+            <div class="small-16 medium-5">
+                <i class="fa-regular fa-laptop-code icons"></i>
+                <h3>Site<br/> próprio</h3>
+                <p>Tenha um site próprio com sua cara, permita agendamentos através do site aumente a visibilidade de seu negócio e facilidade com que seus clientes realizam agendamentos.</p>
+                <a href="#">Saiba mais <i class="fa-light fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="comments">
+        <div class="ceo">
+            <img src="/vectors/vector_ceo.png" alt="ceo" style="width: 32px;">
+        </div>
+
+        <div class="ceo_ball">
+            <img src="/vectors/giant_ball_blue.png" alt="ball" style="width: 36px;">
+        </div>
+        <div class="grid-x grid-container grid-padding-x align-center align-middle">
+            <div class="cell small-16 medium-12 medium-offset-4">
+                <p>“A Wellgo é bem intuitiva, fácil e rápida.<br/> 
+                    Possui um suporte incrível e ágil.<br/> É um, app excelente e com ferramentas assertivas<br/>Tudo que o meu negócio precisava!”</p>
+                    <br/>
+                    <br/>
+                    <span>— Carina Oliveira, CEO da Alcon</span>
+            </div>
+        </div>
+        <div class="woman-smiling"></div>
+    </section>
+
+    <div class="vector_plans">
+        <section class="plans" id="plan">
+            <div class="grid-x grid-container grid-padding-x align-middle align-center text-center">
+                <span class="plans_span">Planos</span>
+                <div class="cell small-16 medium-16">
+                    <h1>Nós fornecemos alternativas <b class="yellow">exclusivas</b> para você.</h1>
+                </div>
+
+                <div class="cell small-16 medium-5" style="z-index: 1;">
+                    <div class="box">
+                        <h4>GRATUITO</h4>
+                        <span class="value"><b class="price">R$ 00</b> /Mensal </span>
+                        <p>Lorem ipsum dolor sit amet. Et quibusdam adipisci est soluta </p>
+
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                        </ul>
+
+                        <a href="#" class="yellowbtn">Escolher plano</a>
+                    </div>
+                </div>
+
+                <div class="cell small-16 medium-6" style="z-index: 1;">
+                    <div class="box_2">
+                        <h4>MAX</h4>
+                        <span class="value"><b class="price">R$ 129</b> /Mensal </span>
+                        <p>Lorem ipsum dolor sit amet. Et quibusdam adipisci est soluta </p>
+
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                        </ul>
+
+                        <a href="#" class="yellowbtn">Escolher plano</a>
+                    </div>
+                </div>
+
+                <div class="cell small-16 medium-5" style="z-index: 1;">
+                    <div class="box">
+                        <h4>PRO</h4>
+                        <span class="value"><b class="price">R$ 229</b> /Mensal </span>
+                        <p>Lorem ipsum dolor sit amet. Et quibusdam adipisci est soluta </p>
+
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                            <li><i class="fa-sharp fa-solid fa-circle-check"></i>Lorem Ipsuym dolor sit amet.</li>
+                        </ul>
+
+                        <a href="#" class="yellowbtn">Escolher plano</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="choice_vector">
+        <div class="choice_vector_2">
+            <section class="choice">
+                <div class="grid-x grid-container grid-padding-x align-center align-middle text-center">
+                    <div class="cell small-16 medium-16">
+                        <span>A escolha é sua!</span>
+                        <h1>Quem foge da organização,<br/>organiza <b class="free">falhar</b>.</h1>
+                        <a href="#" class="yellowbtn">Cadastre-se agora mesmo</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section class="questions faq" id="faq">
+        <ol class="grid-x grid-container grid-padding-x grid-padding-y">
+             <div class="cell all-padding">
+                <h1 class="text-center">Perguntas <b>frequentes</b></h1>
+                <li>
+                    <h3>Lorem ipsum dolor sit amet <i class="fa-sharp fa-solid fa-angle-down"></i></h3>
+                    <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p></div>
+                </li>
+                <li>
+                    <h3>Consectetur adipiscing elit, sed do eiusmod tempor? <i class="fa-sharp fa-solid fa-angle-down"></i></h3>
+                    <div class="text"><p></p></div>
+                </li>
+                <li>
+                    <h3>Incididunt ut labore et dolore magna aliqua? <i class="fa-sharp fa-solid fa-angle-down"></i></h3>
+                    <div class="text"><p></p></div>
+                </li>
+                <li>
+                    <h3>Ut enim ad minim veniam? <i class="fa-sharp fa-solid fa-angle-down"></i></h3>
+                    <div class="text"><p></p></div>
+                </li>
+            </div>
+        </ol>
+    </section>
+
+    <footer>
+        <div class="grid-x grid-container grid-padding-x align-center final-footer">
+            <div class="cell small-16 medium-3">
+                <a href="#"><img class="logofooter" src="/img/wellgologo.svg" alt="logo"></a>
+                <ul>
+                    <li><a href="login.html">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                    <li><a href="#">Cadastro</a></li>
+                </ul>
+            </div>
+
+            <div class="cell small-16 medium-3">
+                <span>A Wellgo</span>
+                <ul>
+                    <li><a href="#">Para seu negócio</a></li>
+                    <li><a href="#">Aplicativo</a></li>
+                    <li><a href="#">Planos</a></li>
+                </ul>
+            </div>
+
+            <div class="cell small-16 medium-3">
+                <span>Transparência</span>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Política de Segurança</a></li>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                </ul>
+            </div>
+
+            <div class="cell small-16 medium-3">
+                <span>Fale Conosco</span>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Fale com o Suporte</a></li>
+                    <li>meajuda@wellgo.com.br</li>
+                    <li>Atendimento rápido</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="grid-x grid-container grix-padding-x text-center">
+            <div class="cell small-16 medium-16">
+                <p><b>© WELLGO.</b> Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+    let open = document.querySelectorAll('.questions ol li h3');
+    let total = open.length;
+    for(i=0; i<total; i++) {
+        open[i].addEventListener('click', function() {
+            openQuestion(this);
+        });
+    }
+    const openQuestion = (el) => {
+        let inactive = document.querySelector('.questions ol li.active');
+        if(inactive) {
+            inactive.classList.remove('active');
+            inactive.querySelector('h3 i').className = 'fa-sharp fa-solid fa-angle-down'; 
+        }
+        if(el.parentNode != inactive) {
+            el.parentNode.classList.add('active');
+            el.querySelector('i').className = 'fa-sharp fa-solid fa-angle-up';
+        }
+   }
+</script>
+
+
+    <script src="https://cdn.noot.com.br/jquery/1.x/js/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.noot.com.br/jquery/1.x/js/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="https://cdn.noot.com.br/slick/1.x/js/slick.min.js" type="text/javascript"></script>
+    <script src="https://cdn.noot.com.br/aos/2.x/js/aos.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

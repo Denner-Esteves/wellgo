@@ -1,0 +1,159 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: #1D4FFF;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+}
+
+input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #CECECE;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+input:focus {
+    border-bottom: 1px solid #1D4FFF;
+}
+
+.form:focus-within {
+    color: #1D4FFF;
+}
+
+ul li {
+    list-style: none;
+    padding:0;
+    text-align: center;
+    padding-bottom: 1rem;
+    line-height: 1.7;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #1D4FFF;
+}
+
+.logo {
+    margin-top:1rem;
+    margin-bottom:5rem;
+}
+
+.yellowbtn {
+    background-color: #FED605;
+  padding:16px 75px;
+  border-radius: 90px;
+  color: #0C1C46 ;
+  display: block;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.yellowbtn:hover {
+    background-color: #FFEE95
+}
+
+.screen{
+    max-width: 39rem;
+    margin:0 auto;
+    padding: 5rem;
+}
+
+.screen a:hover {
+    text-decoration: underline;
+}
+
+
+.container label{
+   text-transform: uppercase;
+}
+
+.container {
+    background-color: #fff;
+    padding:4rem 4rem 3rem 4rem;
+    border-radius: 19px;
+}
+
+.container button {
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom:3rem;
+    text-align: center;
+}
+
+.logo {
+    filter: brightness(0) invert(1);
+}
+
+.vectors_background, .new_vector {
+    position: relative;
+}
+
+.vectors_background::before {
+    content: "";
+    background: url(/vector_login/vector_login.png) no-repeat left top;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    left: 3%;
+    background-size: auto 100%;
+}
+
+@media screen and (max-width:640px) {
+    .mobile_first {
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 0;
+        margin-top:6rem
+    }
+
+    .screen {
+        padding:6rem 0 0 0;
+    }
+
+    .container {
+        padding: 4rem 3rem 3rem 3rem;
+    }
+
+    .vectors_background::before {
+        content: "";
+        background: url(/vector_login/vector_mobile_blue.png) no-repeat left top;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        left: -1%;
+        bottom: -60%;
+        background-size: auto 95%;
+    }
+
+    .new_vector::before {
+        content: "";
+        background: url(/vector_login/vector_y_mobile.png) no-repeat left top;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        top: -34%;
+        background-size: auto 150%;
+    }
+}
+
